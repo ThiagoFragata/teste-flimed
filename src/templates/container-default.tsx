@@ -1,8 +1,8 @@
 import { logotipo } from '@/assets'
 import { ToggleTheme } from '@/components/molecules/toggle-theme'
+import { DialogQuestions } from '@/pages/questions/components/organism/dialog-questions'
 import { ReactElement } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Button } from '../components/ui/button'
 
 interface ContainerDefaultProps {
   children: ReactElement
@@ -31,7 +31,7 @@ export function ContainerDefault({ children }: ContainerDefaultProps) {
 
         <div className="flex gap-4">
           <ToggleTheme />
-          <Button>Contato</Button>
+          <DialogQuestions />
         </div>
       </header>
 

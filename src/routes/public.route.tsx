@@ -1,11 +1,11 @@
-import { QuestionsView } from '@/pages/questions/view/questionsView'
+import { QuestionsPage } from '@/pages/questions/screens/questionsPage'
 import { Route, Routes } from 'react-router-dom'
 
 export function PublicRoutes() {
   return (
     <Routes>
-      <Route path="/" Component={QuestionsView} />
-      <Route path="/questions" Component={QuestionsView} />
+      <Route path="/" Component={QuestionsPage} />
+      <Route path="/questions" Component={QuestionsPage} />
     </Routes>
   )
 }
