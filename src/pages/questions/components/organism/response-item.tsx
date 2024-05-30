@@ -1,14 +1,14 @@
-import { questionType } from '@/pages/home/model/homeModel'
 import { Control } from 'react-hook-form'
+import { questionsType } from '../../model/questionsModel'
 import { Input } from '../atoms/input-question'
 import { RadioGroup } from '../molecules/radio-group'
 
 interface ResponseItemProps {
-  control: Control<questionType>
-  inputName: keyof questionType
+  control: Control<questionsType>
+  inputName: keyof questionsType
   labelInput: string
-  radiosName1: keyof questionType
-  radiosName2: keyof questionType
+  radiosName1: keyof questionsType
+  radiosName2: keyof questionsType
   text3?: string
 }
 

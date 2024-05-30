@@ -1,10 +1,10 @@
-import { questionType } from '@/pages/home/model/homeModel'
 import { Control, Controller } from 'react-hook-form'
+import { questionsType } from '../../model/questionsModel'
 
 interface CheckboxQuestionProps {
   label: string
-  name: keyof questionType
-  control: Control<questionType>
+  name: keyof questionsType
+  control: Control<questionsType>
 }
 export function Checkbox({ control, label, name }: CheckboxQuestionProps) {
   return (

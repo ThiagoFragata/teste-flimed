@@ -1,7 +1,7 @@
 import { logotipo } from '@/assets'
+import { ToggleTheme } from '@/components/molecules/toggle-theme'
 import { ReactElement } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ToggleTheme } from '../components/molecules/toggle-theme'
 import { Button } from '../components/ui/button'
 
 interface ContainerDefaultProps {

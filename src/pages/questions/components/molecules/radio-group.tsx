@@ -1,9 +1,9 @@
-import { questionType } from '@/pages/home/model/homeModel'
 import { Control, Controller } from 'react-hook-form'
+import { questionsType } from '../../model/questionsModel'
 
 interface RadioGroupProps {
-  name: keyof questionType
-  control: Control<questionType>
+  name: keyof questionsType
+  control: Control<questionsType>
 }
 export function RadioGroup({ name, control }: RadioGroupProps) {
   return (
@@ -11,8 +11,8 @@ export function RadioGroup({ name, control }: RadioGroupProps) {
       name={name}
       control={control}
       render={({ field, fieldState: { error } }) => (
-        <div>
-          <div className="flex justify-between flex-1 gap-4">
+        <div className="flex-1">
+          <div className="flex justify-between gap-4">
             <label className="flex flex-col items-center">
               <span className="mb-2 text-gray-700">Menos</span>
               <input

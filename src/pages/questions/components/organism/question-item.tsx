@@ -1,8 +1,7 @@
-import { questionType } from '@/pages/home/model/homeModel'
 import { Control } from 'react-hook-form'
+import { questionsType } from '../../model/questionsModel'
 import { Checkbox } from '../atoms/checkbox-question'
 import { QuestionGroup } from '../molecules/question-group'
-import { Button } from '../ui/button'
 import { ResponseItem } from './response-item'
 
 interface QuestionItemProps {
@@ -11,24 +10,24 @@ interface QuestionItemProps {
   text3?: string
   number: number
   labelNone: string
-  checkboxName: keyof questionType
+  checkboxName: keyof questionsType
 
-  inputNameA: keyof questionType
+  inputNameA: keyof questionsType
   labelInputA: string
-  radiosNameA1: keyof questionType
-  radiosNameA2: keyof questionType
+  radiosNameA1: keyof questionsType
+  radiosNameA2: keyof questionsType
 
-  inputNameB: keyof questionType
+  inputNameB: keyof questionsType
   labelInputB: string
-  radiosNameB1: keyof questionType
-  radiosNameB2: keyof questionType
+  radiosNameB1: keyof questionsType
+  radiosNameB2: keyof questionsType
 
-  inputNameC: keyof questionType
+  inputNameC: keyof questionsType
   labelInputC: string
-  radiosNameC1: keyof questionType
-  radiosNameC2: keyof questionType
+  radiosNameC1: keyof questionsType
+  radiosNameC2: keyof questionsType
 
-  control: Control<questionType>
+  control: Control<questionsType>
 }
 
 export function QuestionItem({
@@ -55,7 +54,7 @@ export function QuestionItem({
   radiosNameC2,
 }: QuestionItemProps) {
   return (
-    <div>
+    <div className="mb-8">
       <QuestionGroup
         number={number}
         text1={text1}
@@ -94,10 +93,6 @@ export function QuestionItem({
           radiosName2={radiosNameC2}
           text3={text3}
         />
-      </div>
-
-      <div className="flex justify-end mt-16 mb-8">
-        <Button type="submit">Salvar</Button>
       </div>
     </div>
   )
