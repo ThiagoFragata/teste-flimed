@@ -1,4 +1,4 @@
-import { ContainerDefault } from '@/components/templates/container-default'
+import { ContainerDefault } from '@/templates/container-default'
 
 export function QuestionsView() {
   return (

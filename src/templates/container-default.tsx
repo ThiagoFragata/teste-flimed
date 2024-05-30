@@ -1,8 +1,8 @@
 import { logotipo } from '@/assets'
 import { ReactElement } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ToggleTheme } from '../molecules/toggleTheme'
-import { Button } from '../ui/button'
+import { ToggleTheme } from '../components/molecules/toggle-theme'
+import { Button } from '../components/ui/button'
 
 interface ContainerDefaultProps {
   children: ReactElement
@@ -12,8 +12,8 @@ export function ContainerDefault({ children }: ContainerDefaultProps) {
   const pathname = location.pathname
 
   return (
-    <div className="max-w-screen-xl p-8 mx-auto">
-      <header className="flex items-center justify-between mb-8">
+    <div className="min-h-screen bg-teal-50 dark:bg-gray-950">
+      <header className="flex items-center justify-between max-w-screen-xl p-8 mx-auto">
         <Link to={'https://flimed.com.br'} target="_blank">
           <img src={logotipo} />
         </Link>
