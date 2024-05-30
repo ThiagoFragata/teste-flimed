@@ -55,6 +55,15 @@ Abra seu navegador e acesse [http://localhost:5173](http://localhost:5173) (ou a
 - React Hook Form
 - Yup
 
+## Features
+
+- **Responsividade**: Implementar suporte responsivo para garantir uma boa experiência de usuário em diferentes dispositivos, incluindo tablets e celulares.
+- **Melhoria na Nomenclatura dos Schemas**: Refinar a nomenclatura dos schemas de validação e dados do questionário para maior clareza e manutenção do código.
+
+## Disponibilidade
+
+Este projeto está disponível apenas para telas de computador, não sendo otimizado para dispositivos móveis.
+
 ## Contribuição
 
 Sinta-se à vontade para contribuir com o projeto! Se você encontrar algum problema, tiver sugestões de melhorias ou quiser adicionar novas funcionalidades, abra uma issue ou envie um pull request.
