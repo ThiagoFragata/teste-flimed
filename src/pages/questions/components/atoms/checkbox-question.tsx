@@ -19,7 +19,7 @@ export function Checkbox({ control, label, name }: CheckboxQuestionProps) {
             onChange={onChange}
             onBlur={onBlur}
             type="checkbox"
-            className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-teal-500 checked:bg-teal-500 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-primary checked:bg-primary checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </label>
       )}

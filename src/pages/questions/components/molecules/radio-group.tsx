@@ -19,7 +19,7 @@ export function RadioGroup({ name, control }: RadioGroupProps) {
                 {...field}
                 type="radio"
                 value="Menos"
-                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-teal-500 checked:bg-teal-500 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-primary checked:bg-primary checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </label>
 
@@ -29,7 +29,7 @@ export function RadioGroup({ name, control }: RadioGroupProps) {
                 {...field}
                 type="radio"
                 value="Igual"
-                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-teal-500 checked:bg-teal-500 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-primary checked:bg-primary checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </label>
 
@@ -39,7 +39,7 @@ export function RadioGroup({ name, control }: RadioGroupProps) {
                 {...field}
                 type="Radio"
                 value="Mais"
-                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-teal-500 checked:bg-teal-500 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-primary checked:bg-primary checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </label>
 
@@ -49,7 +49,7 @@ export function RadioGroup({ name, control }: RadioGroupProps) {
                 {...field}
                 type="radio"
                 value="Não sei"
-                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-teal-500 checked:bg-teal-500 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-16 h-16 bg-white border rounded-lg appearance-none border-slate-300 dark:bg-slate-800 dark:checked:bg-primary checked:bg-primary checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </label>
           </div>

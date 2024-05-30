@@ -13,9 +13,9 @@ export function QuestionsView() {
   return (
     <ContainerDefault>
       <div className="h-full">
-        <section className="p-8 mb-40 bg-teal-500 dark:bg-teal-600">
+        <section className="p-8 mb-40 bg-primary">
           <div className="max-w-screen-xl mx-auto">
-            <div className="relative inline-flex flex-col items-center justify-center p-6 px-16 border-4 border-teal-400 rounded-lg dark:border-teal-300 -bottom-32 bg-slate-50 dark:bg-slate-950">
+            <div className="relative inline-flex flex-col items-center justify-center p-6 px-16 border-4 border-teal-400 rounded-lg dark:border-teal-200 -bottom-32 bg-slate-50 dark:bg-slate-950">
               <img src={question} className="p-4 mb-4 bg-teal-500 rounded-md" />
               <h1>Questionário</h1>
             </div>

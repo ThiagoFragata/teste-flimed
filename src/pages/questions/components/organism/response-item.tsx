@@ -21,7 +21,7 @@ export function ResponseItem({
   text3,
 }: ResponseItemProps) {
   return (
-    <div className="flex items-center justify-between gap-16">
+    <div className="flex items-center gap-16">
       <Input control={control} name={inputName} label={labelInput} />
       <RadioGroup control={control} name={radiosName1} />
 
