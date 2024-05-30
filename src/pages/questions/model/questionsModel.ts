@@ -45,7 +45,15 @@ export const questionSchemaQ1 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q1isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 
   Q1respostaB: yup
     .string()
@@ -70,7 +78,16 @@ export const questionSchemaQ1 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q1isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
+
   Q1radioGroupB2: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -78,7 +95,15 @@ export const questionSchemaQ1 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q1isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 
   Q1respostaC: yup
     .string()
@@ -95,6 +120,7 @@ export const questionSchemaQ1 = yup.object({
         return !(isNenhum && value && value.length > 0)
       }
     ),
+
   Q1radioGroupC1: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -102,7 +128,16 @@ export const questionSchemaQ1 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q1isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
+
   Q1radioGroupC2: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -110,7 +145,15 @@ export const questionSchemaQ1 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q1isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 })
 
 // Questão 02
@@ -156,7 +199,15 @@ export const questionSchemaQ2 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q2isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 
   Q2respostaB: yup
     .string()
@@ -181,7 +232,16 @@ export const questionSchemaQ2 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q2isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
+
   Q2radioGroupB2: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -189,7 +249,15 @@ export const questionSchemaQ2 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q2isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 
   Q2respostaC: yup
     .string()
@@ -206,6 +274,7 @@ export const questionSchemaQ2 = yup.object({
         return !(isNenhum && value && value.length > 0)
       }
     ),
+
   Q2radioGroupC1: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -213,7 +282,16 @@ export const questionSchemaQ2 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q2isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
+
   Q2radioGroupC2: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -221,7 +299,15 @@ export const questionSchemaQ2 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q2isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 })
 
 // Questão 03
@@ -267,7 +353,15 @@ export const questionSchemaQ3 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q3isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 
   Q3respostaB: yup
     .string()
@@ -292,7 +386,16 @@ export const questionSchemaQ3 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q3isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
+
   Q3radioGroupB2: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -300,7 +403,15 @@ export const questionSchemaQ3 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q3isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 
   Q3respostaC: yup
     .string()
@@ -317,6 +428,7 @@ export const questionSchemaQ3 = yup.object({
         return !(isNenhum && value && value.length > 0)
       }
     ),
+
   Q3radioGroupC1: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -324,7 +436,16 @@ export const questionSchemaQ3 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q3isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
+
   Q3radioGroupC2: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
@@ -332,7 +453,15 @@ export const questionSchemaQ3 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q3isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
 })
 
 export const questionsSchema = yup.object().shape({
