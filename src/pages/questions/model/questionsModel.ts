@@ -29,7 +29,15 @@ export const questionSchemaQ1 = yup.object({
       is: (value: string) => value && value.length > 0,
       then: (schema) => schema.required('Selecione uma opção'),
       otherwise: (schema) => schema.notRequired(),
-    }),
+    })
+    .test(
+      'checkbox-validation',
+      'Desmarque "Nenhum" para preencher este campo',
+      function (value) {
+        const isNenhum = this.parent.Q1isNenhum
+        return !(isNenhum && value && value.length > 0)
+      }
+    ),
   Q1radioGroupA2: yup
     .string()
     .oneOf(options, 'Selecione uma opção')
